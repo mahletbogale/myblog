@@ -1,123 +1,384 @@
-/* .outer {
-    border: 5px dotted rgb(214,129,137);
-    border-radius: 5px;
-    width: 1050px;
-    height: 1050px;
-    padding: 10px;
-    margin-bottom: 40px;
-    
-  }
-
-  .float {
-    
-    padding: 10px;
-    border: 5px solid rgba(214,129,137,.4);
-    border-radius: 5px;
-    background-color: rgba(233,78,119,.4);
-    color: #fff;
-    float: left;  
-    width: 200px;
-    height: 1000px;
-    margin: 0px 20px 0 0;
-  }
-
- */
 body {
   margin: 0px;
-}
-.float img {
-  border: 10px solid rgba(233, 78, 119, 0.3);
-  border-radius: 50%;
-  margin-left: 80px;
-  margin-top: 80px;
-  margin-bottom: 0px;
-}
-.float .list {
-  margin-top: 0px;
-  /* padding-top: 0px; */
-}
-.outer {
-  /* border: 5px solid rgb(214,129,137); */
-  /* border-radius: 5px; */
-  min-width: 100vh;
+  min-width: 100vw;
   min-height: 100vh;
-  padding-left: 0px;
-}
-.main {
-  margin-right: 40px;
-  /* margin-left: 40px; */
-  position: relative;
-  float: right;
-  padding:80px ;
-  min-width: 70vh;
-  /* margin: 0px 0px 0 0px; */
+  padding: 0px;
 }
 
-.float {
+.outer {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
   position: fixed;
+}
+
+.leftitems {
+  width: 250px;
+  position: fixed;
+
+  background-color: #ff4500;
+  color: white;
+
+  min-height: 100vh;
+}
+
+.icon {
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+  margin-top: 0px;
+  line-height: 0px;
+  color: white;
+  list-style: none;
+
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.icon i {
+  width: 10px;
+
+  padding-top: 0px;
+  font-size: xx-large;
   margin-left: 0px;
-  margin-top: 50px;
-  padding: 10px;
-  /* border: 5px solid rgba(214,129,137,.4); */
-  border-radius: 0px;
-  /* background-color: rgba(233,78,119,.4); */
-  background-color: rgba(214, 129, 137);
-  color: #fff;
-  float: left;
-  /* width: 300px; */
-  min-width: 40vh;
-  height: 1650px;
-  margin: 0px 0px 0 0px;
+  color: tomato;
 }
+.icon,
+a {
+  font-size: 0px;
+
+  text-decoration: none;
+
+  color: white;
+}
+
+.main {
+  width: 500px;
+  height: 500px;
+  min-width: 70vw;
+  min-height: 100vh;
+  margin-left: 280px;
+
+  overflow-y: auto;
+  position: absolute;
+  z-index: 0;
+  color: gray;
+  line-height: 20px;
+
+  margin-top: 0px;
+  transition: 2s;
+
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  scroll-snap-align: start;
+
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+
+  justify-content: center;
+}
+
+.main,
+p {
+  padding-right: 60px;
+
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.leftitems img {
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-left: 60px;
+  margin-top: 90px;
+}
+
+a {
+  font-size: 30px;
+
+  text-decoration: none;
+
+  color: white;
+}
+
+li :hover {
+  color: black;
+}
+
+.leftitems li {
+  margin-top: 0px;
+  line-height: 55px;
+  color: white;
+  list-style: none;
+  font-size: 30px;
+  padding: 60px;
+  cursor: pointer;
+}
+#labout {
+  padding-left: 23px;
+}
+#lskill {
+  padding-left: 25px;
+}
+
+#lproject {
+  padding-left: 10px;
+}
+
 h1 {
-  color: rgba(214, 129, 137);
+  color: black;
   text-align: center;
-  /* float: right; */
+  font-size: 50px;
+  line-height: 40px;
 }
+span,
+#spanH1 {
+  color: #ff4500;
+}
+
 h2 {
-  color: rgba(214, 129, 137);
-  text-align: center;
-  /* float: right; */
+  color: #ff4500;
+  text-align: left;
+  line-height: 40px;
 }
 h3 {
-  color: rgba(214, 129, 137);
-  text-align: center;
-  /* line-height: 10px; */
-  /* float: right; */
+  color: black;
+  text-align: left;
+  font-size: 15px;
+  line-height: 0px;
 }
 h4 {
   color: black;
   text-align: left;
-  /* line-height: 10px; */
-  /* float: right; */
+  line-height: 10px;
+  font-size: 13px;
+  padding-bottom: 25px;
 }
 
-li {
-  margin-top: 10px;
-  line-height: 25px;
-  /* margin-bottom: 50px; */
-  list-style: none;
-  font-size: 30px;
-  padding-left: 80px;
-  color: white;
-}
-.main,
-p {
-  color: gray;
-  line-height: 25px;
-  width: 600px;
-}
-span {
+#spanEx {
   float: right;
-  color: rgba(214, 129, 137);
 }
-.labout {
-  padding-left: 100px;
+
+.wifrContainer {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 10px;
+  margin-right: 70px;
 }
-.lskill {
-  padding-left: 100px;
+
+.wifrContainer img {
+  width: 358px;
+  height: 200px;
 }
-a {
-  text-decoration: none;
+
+.wireframe {
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  width: 300px;
+  height: 400px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  padding-left: 20px;
+  padding-right: 58px;
+}
+.paraFlashandMenu {
+  background-color: tomato;
+  width: 298px;
+  height: 60px;
+  margin-bottom: 0px;
+
   color: white;
+}
+.paraTodo {
+  background-color: navy;
+  width: 298px;
+  height: 50px;
+  margin-bottom: 0px;
+  color: white;
+}
+.paraGrocery {
+  width: 298px;
+  background-color: teal;
+  height: 30px;
+  margin-bottom: 0px;
+  color: white;
+}
+.wireframe,
+p {
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 0;
+}
+
+.pic,
+i {
+  padding-top: 20px;
+  font-size: large;
+  margin-left: 70px;
+  color: tomato;
+}
+
+.iconSkill,
+i {
+  width: 700px;
+}
+.pic {
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .outer {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
+    font-size: small;
+  }
+
+  .leftitems {
+    width: 100%;
+    min-height: 10%;
+    position: fixed;
+  }
+
+  .leftitems li {
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+    display: flex;
+
+    line-height: 2px;
+
+    font-size: 1px;
+    padding: 0 0px 0 0px;
+  }
+
+  .slide,
+  p,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .leftitems img {
+    width: 80px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+
+  .main {
+    margin-left: 0px;
+
+    position: absolute;
+    margin-top: 140px;
+    margin-bottom: 10px;
+
+    height: 300px;
+    width: 300px;
+
+    min-width: 95vw;
+
+    min-height: 80vh;
+  }
+
+  a {
+    font-size: 15px;
+
+    padding: 8px;
+  }
+  .icon {
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .main,
+  p {
+    padding: 10px;
+  }
+
+  .wifrContainer {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+  }
+
+  .wireframe img {
+    margin-bottom: 0px;
+    width: 198px;
+    height: 100px;
+  }
+
+  .wireframe {
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    width: 178px;
+    height: 210px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+  .wireframe,
+  p {
+    font-size: 10px;
+    line-height: 9px;
+    width: 140px;
+    padding-left: 0px;
+  }
+  .paraFlashandMenu {
+    background-color: tomato;
+    width: 188px;
+    height: 20px;
+    margin-bottom: 0px;
+
+    color: white;
+  }
+  .paraTodo {
+    background-color: navy;
+    width: 188px;
+    height: 10px;
+    margin-bottom: 0px;
+    color: white;
+  }
+  .paraGrocery {
+    width: 188px;
+    background-color: teal;
+    height: 10px;
+    margin-bottom: 0px;
+    color: white;
+  }
+
+  .pic,
+  i {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: small;
+    margin-left: 40px;
+    color: tomato;
+  }
+
+  .iconSkill,
+  i {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  h4 {
+    font-size: 12px;
+  }
 }
