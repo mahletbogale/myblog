@@ -58,7 +58,7 @@ a {
 } */
 
 .main {
-  width:75vw;
+  width:70vw;
   height: 90%;
   
   margin-left: 300px;
@@ -104,7 +104,7 @@ padding-left: 50px;
 .slides{
   padding-top: 30px;
  align-items: center;
-  width: 60vw;
+  width: 65vw;
   height: 100vh;
   justify-content: center;
   
