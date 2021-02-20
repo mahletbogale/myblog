@@ -1,14 +1,17 @@
+
+
 body {
-  margin: 0px;
+  margin: 0;
   min-width: 100vw;
   min-height: 100vh;
   padding: 0px;
+  background-color: rgb(234, 237, 237);
 }
 
 .outer {
   display: grid;
   grid-template-columns: 1fr 6fr;
-  min-width: 100vw;
+  min-width: 30vw;
   min-height: 100vh;
   margin: 0px;
   margin-bottom: 20px;
@@ -20,7 +23,7 @@ body {
   width: 250px;
   position: fixed;
 
-  background-color: #ff4500;
+  background-color: #005FB2; 
   color: white;
 
   min-height: 100vh;
@@ -44,7 +47,7 @@ body {
   padding-top: 0px;
   font-size: xx-large;
   margin-left: 0px;
-  color: tomato;
+  
 }
 .icon,
 a {
@@ -56,20 +59,20 @@ a {
 }
 
 .main {
-  width: 500px;
-  height: 500px;
-  min-width: 70vw;
-  min-height: 100vh;
-  margin-left: 280px;
+  width:60vw;
+  height: 90%;
+  
+  margin-left: 300px;
 
-  overflow-y: auto;
+  overflow: hidden;
   position: absolute;
-  z-index: 0;
+
   color: gray;
   line-height: 20px;
 
   margin-top: 0px;
   transition: 2s;
+  box-shadow:5px 5px 5px 5px  rgba(68, 68, 68, 0.6);
 
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -82,15 +85,34 @@ a {
   transition: transform 0.5s;
 
   justify-content: center;
+  background-color: white ;
+  
 }
 
 .main,
 p {
-  padding-right: 60px;
+  /* padding-right: 60px; */
+  margin-top: 20px;
+padding-left: 50px;
+
 
   padding-bottom: 0px;
   padding-top: 0px;
+
+
 }
+
+.slides{
+  padding-top: 30px;
+ align-items: center;
+  width: 60vw;
+  height: 100vh;
+  justify-content: center;
+  
+
+}
+
+
 
 .leftitems img {
   border: 5px solid white;
@@ -110,6 +132,7 @@ a {
 li :hover {
   color: black;
 }
+
 
 .leftitems li {
   margin-top: 0px;
@@ -136,22 +159,28 @@ h1 {
   text-align: center;
   font-size: 50px;
   line-height: 40px;
+  padding-top: 140px;
 }
 span,
 #spanH1 {
-  color: #ff4500;
+  color: #005FB2; 
+  padding-right: 55px;
 }
 
 h2 {
-  color: #ff4500;
+  color: #005FB2; 
   text-align: left;
   line-height: 40px;
+  padding-left: 0px;
+  padding-top: 20px;
+  
 }
 h3 {
   color: black;
   text-align: left;
   font-size: 15px;
   line-height: 0px;
+  
 }
 h4 {
   color: black;
@@ -159,7 +188,9 @@ h4 {
   line-height: 10px;
   font-size: 13px;
   padding-bottom: 25px;
+ 
 }
+
 
 #spanEx {
   float: right;
@@ -167,61 +198,82 @@ h4 {
 
 .wifrContainer {
   display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
+ width: 800px;
+ height: 500px;
+  grid-template-columns: repeat(4, 1fr);
   margin-left: 10px;
-  margin-right: 70px;
+  margin-right: 0px;
+ 
+ justify-content: center;
 }
 
 .wifrContainer img {
-  width: 358px;
-  height: 200px;
+  width: 188px;
+  height: 160px;
+  margin-top: 20px;
+  
 }
 
-.wireframe {
+.wifrContainer .wireframe {
+  height: 420px;
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  width: 300px;
-  height: 400px;
-  margin-bottom: 30px;
-  margin-left: 0px;
-  padding-left: 20px;
-  padding-right: 58px;
+  width: 188px;
+  border-radius: 35px;
+  border: 1px solid   #005FB2;;
+
+  margin-right: 10px; 
+
+
 }
 .paraFlashandMenu {
-  background-color: tomato;
-  width: 298px;
-  height: 60px;
-  margin-bottom: 0px;
-
-  color: white;
+  text-align: center;
+  color: #005FB2;
+  font-size: 20px;
 }
 .paraTodo {
-  background-color: navy;
-  width: 298px;
-  height: 50px;
-  margin-bottom: 0px;
-  color: white;
+
+  text-align: center;
+  color: #005FB2;
+  font-size: 20px;
 }
 .paraGrocery {
-  width: 298px;
-  background-color: teal;
-  height: 30px;
-  margin-bottom: 0px;
-  color: white;
+  text-align: center;
+  color: #005FB2;
+  font-size: 20px;
 }
 .wireframe,
 p {
-  font-size: 13px;
-  line-height: 15px;
-  margin-top: 0;
+  font-size: 10px;
+  line-height:15px;
+  height: 0px;
+  width:80px;
+ 
+ 
+ 
+  
+  
+ 
 }
 
-.pic,
-i {
-  padding-top: 20px;
-  font-size: large;
-  margin-left: 70px;
-  color: tomato;
+.wireframe .appicon{
+ width:188px;
+ height: 57px;
+  padding-top: 0px;
+  
+  margin-left: 0px;
+  margin-top: 120px;
+ margin-bottom: 0px;
+ background-color: #005FB2; 
+ border-bottom-left-radius: 35px;
+ border-bottom-right-radius: 35px;
+}
+.appicon i{
+  font-size: small;
+  display: inline;
+ padding-left: 10px;
+ padding-top: 10px;
+ 
+
 }
 
 .iconSkill,
@@ -232,7 +284,103 @@ i {
   text-decoration: none !important;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
+  .slides{
+    padding-top: 0px;
+   align-items: center;
+    width: 80vw;
+    height: 100vh;
+    justify-content: center;
+    
+  
+  }
+  span,
+#spanH1 {
+ 
+  padding-right: 0px;
+}
+
+  .wireframe .appicon{
+    width:148px;
+    height: 47px;
+     padding-top: 0px;
+     
+     margin-left: 0px;
+     margin-top: 30px;
+    margin-bottom: 0px;
+    background-color: #005FB2; 
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+   
+   }
+   .appicon i{
+     font-size: small;
+     display: inline;
+   
+    padding: 0px;
+    
+   
+   }
+
+  .wifrContainer img {
+    width: 148px;
+    height: 60px;
+    margin-top: 10px;
+    
+  }
+
+  .paraFlashandMenu {
+    text-align: center;
+    color: #005FB2;
+    font-size: 10px;
+  }
+  .paraTodo {
+  
+    text-align: center;
+    color: #005FB2;
+    font-size: 10px;
+  }
+  .paraGrocery {
+    text-align: center;
+    color: #005FB2;
+    font-size: 10px;
+  }
+  .wireframe,
+  p {
+    font-size: 8px;
+    line-height:8px;
+    height: 0px;
+    width:70px;
+ 
+   
+  }
+  .wifrContainer .wireframe {
+    height: 188px;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    width: 148px;
+    border-radius: 15px;
+    border: 1px solid   #005FB2;;
+  
+    
+  
+  
+  }
+  .wifrContainer {
+    display: grid;
+   width: 250px;
+   height: 400px;
+    grid-template-columns: repeat(2, 1fr);
+   
+    margin-right: 0px;
+   
+   justify-content: center;
+  }
+
+
+
+
+
+
   .outer {
     display: grid;
     grid-template-rows: 1fr 2fr;
@@ -300,85 +448,28 @@ i {
     grid-template-columns: 1fr 4fr;
   }
 
-  .main,
-  p {
-    padding: 10px;
-  }
-
-  .wifrContainer {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    margin-left: 30px;
-  }
-
-  .wireframe img {
-    margin-bottom: 0px;
-    width: 198px;
-    height: 100px;
-  }
-
-  .wireframe {
-    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-    width: 178px;
-    height: 210px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-  }
-  .wireframe,
-  p {
-    font-size: 10px;
-    line-height: 9px;
-    width: 140px;
-    padding-left: 0px;
-  }
-  .paraFlashandMenu {
-    background-color: tomato;
-    width: 188px;
-    height: 20px;
-    margin-bottom: 0px;
-
-    color: white;
-  }
-  .paraTodo {
-    background-color: navy;
-    width: 188px;
-    height: 10px;
-    margin-bottom: 0px;
-    color: white;
-  }
-  .paraGrocery {
-    width: 188px;
-    background-color: teal;
-    height: 10px;
-    margin-bottom: 0px;
-    color: white;
-  }
-
-  .pic,
-  i {
-    margin-top: 0px;
-    padding-top: 0px;
-    font-size: small;
-    margin-left: 40px;
-    color: tomato;
-  }
+  
 
   .iconSkill,
   i {
-    width: 300px;
+    width: 220px;
+    padding-bottom: 10px;
   }
 
   h1 {
+    
+    
+    padding-top: 40px;
     font-size: 20px;
   }
   h2 {
-    font-size: 15px;
+    font-size: 10px;
+    margin-bottom: 0px;
   }
   h3 {
-    font-size: 12px;
+    font-size: 8px;
   }
   h4 {
-    font-size: 12px;
+    font-size: 8px;
   }
 }
