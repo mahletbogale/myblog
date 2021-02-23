@@ -7,6 +7,23 @@ body {
   padding: 0px;
   background-color: rgb(234, 237, 237);
 }
+.main 
+/* ,#slidesA */
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  align-items: center;
+  /* mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+   /* background-Image: url("./image/laptop-1149412_1920.jpg"); */
+   background-Size: 100%;
+   background-Repeat: no-repeat;
+   background-position:bottom;
+ margin-left: 0px;
+  
+
+}
+
 
 .outer {
   display: grid;
@@ -48,14 +65,8 @@ body {
   margin-left: 10px;
   color: #005FB2; 
 }
-/* .icon,
-a {
- 
 
-  text-decoration: none;
 
- 
-} */
 
 .main {
   width:70vw;
@@ -102,7 +113,7 @@ padding-left: 50px;
 }
 
 .slides{
-  padding-top: 30px;
+  padding-top: 20px;
  align-items: center;
   width: 65vw;
   height: 100vh;
@@ -110,8 +121,21 @@ padding-left: 50px;
   
 
 }
+#slidesA{
 
+  
+  width:45vw;
+ line-height: 2;
+  justify-content: center;
+  align-items: center;
+  margin-left: 160px;
+  
+}
 
+.iconSkill{
+  font-size:medium ;
+  padding-bottom: 30px;
+}
 
 .leftitems img {
   border: 5px solid white;
@@ -158,7 +182,7 @@ h1 {
   text-align: center;
   font-size: 50px;
   line-height: 40px;
-  padding-top: 140px;
+  padding-top: 50px;
 }
 span,
 #spanH1 {
@@ -172,7 +196,7 @@ h2 {
   line-height: 40px;
   padding-left: 0px;
   padding-top: 20px;
-  
+  margin-top: 10px;
 }
 h3 {
   color: black;
@@ -198,7 +222,7 @@ h4 {
 .wifrContainer {
   display: grid;
  width: 800px;
- height: 500px;
+
   grid-template-columns: repeat(4, 1fr);
   margin-left: 10px;
   margin-right: 0px;
@@ -214,12 +238,12 @@ h4 {
 }
 
 .wifrContainer .wireframe {
-  height: 420px;
+  height: 460px;
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   width: 188px;
   border-radius: 35px;
   border: 1px solid   #005FB2;;
-
+background-color: white;
   margin-right: 10px; 
 
 
@@ -256,11 +280,11 @@ p {
 
 .wireframe .appicon{
  width:188px;
- height: 57px;
+ height: 47px;
   padding-top: 0px;
   
   margin-left: 0px;
-  margin-top: 120px;
+  margin-top: 170px;
  margin-bottom: 0px;
  background-color: #005FB2; 
  border-bottom-left-radius: 35px;
@@ -284,6 +308,21 @@ i {
 }
 
 @media only screen and (max-width: 900px) {
+  .iconSkill{
+    font-size:8px ;
+   
+  }
+
+  #slidesA{
+
+  
+    width:80vw;
+   line-height: 2;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    
+  }
   .slides{
     padding-top: 0px;
    align-items: center;
@@ -300,16 +339,16 @@ i {
 }
 
   .wireframe .appicon{
-    width:148px;
-    height: 47px;
+    width:160px;
+    height: 27px;
      padding-top: 0px;
      
      margin-left: 0px;
-     margin-top: 30px;
+     margin-top: 64px;
     margin-bottom: 0px;
     background-color: #005FB2; 
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
    
    }
    .appicon i{
@@ -322,7 +361,7 @@ i {
    }
 
   .wifrContainer img {
-    width: 148px;
+    width: 160px;
     height: 60px;
     margin-top: 10px;
     
@@ -346,17 +385,19 @@ i {
   }
   .wireframe,
   p {
+    padding-right: 10px;
+    margin-top: 10px;
     font-size: 8px;
     line-height:8px;
     height: 0px;
-    width:70px;
+    width:100px;
  
    
   }
   .wifrContainer .wireframe {
-    height: 188px;
+    height: 180px;
     box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-    width: 148px;
+    width: 150px;
     border-radius: 15px;
     border: 1px solid   #005FB2;;
   
@@ -367,7 +408,7 @@ i {
   .wifrContainer {
     display: grid;
    width: 250px;
-   height: 400px;
+   height: 300px;
     grid-template-columns: repeat(2, 1fr);
    
     margin-right: 0px;
