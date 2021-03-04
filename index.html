@@ -13,86 +13,202 @@
                 <div class="leftitems">
                 
                     <img src="./image/linked.jpg" width="100px"/>
-                    <li>
-                        <a href="#paraP" id="lproject" >Projects</a> 
-                    <a href="#paraA" id="labout">About</a> 
-                    <a href="#paraE" id="lexperience" >Experience</a> 
-                    <a href="#paraED" id="leducation" >Education</a> 
+                 
+               
+
+                      
+
+                       <div class="name">
+                            <h1>Mahlet <span>Bogale</span></h1>
+                            <h1>SOFTWARE<span> Engineer</span></h1>
+                        
+                        </div>
+         
+                      
+                    
+        <label for="toggle" class="lbl" > &#9776; </label>
+        <input type="checkbox" id="toggle"  />
+      
+
+                      <div class="sidemenu" id="sidem">
+
+                    <li class="lficon">
+                        <a href="https://github.com/mahletbogale"><i class="fa fa-github" aria-hidden="true"></i></a> 
+                        <a href="https://www.linkedin.com/in/mahlet-bogale-be/"><i class="fa fa-linkedin fa-2x" ></i></a> 
+                          </li>    
+
+
+                        <a href="#paraP" 
+                        id="lproject" 
+                        onclick="togglepro('wifm')"
+                        
+                        > <label for="pro" 
+                        class="prolbl">
+
+                        Projects </label>   </a> 
+                        <input type="checkbox" id="pro"  />
+                              <div id="wifm"  class="proj">
+                            <a class="next" href="#wifi1">Todo </a>
+                            <a class="next" href="#wifi2">Grocery </a>
+                            <a class="next" href="#wifi3">Flashcards </a>
+                            <a class="next" href="#wifi4">Menu </a>
+
+                        </div>
+
+
+                        
                   
-                    <a href="#paraS" id="lskill" >Skill</a>
-                    </li>
+                          <a href="#slidesA" id="labout">About</a> 
+
+                            <a href="#paraE" id="lexperience" >Experience</a> 
+
+                                <a href="#paraED" id="leducation" >Education</a> 
+                  
+                               <a href="#paraS" id="lskill" >Skill</a>
+
+                            </div>
+
+                              
+
+                           
+                 
+                 </div>
                 
-                </div>
+                   
+                
+               
+             
         
-     <div class="main">
-      <div class="slides">
+<div class="main">
+
+
+      <div class="slides" id="paraP">
         
+        
+           
 
-        <p class="slide" id="paraP"><h2>PROJECTS</h2>
-            <div style class="wifrContainer">
+    
+            <div class="wifrContainer" id="slider">
+               
+        
+                <div class="wireframe"  id="wifi1">
 
-                <div class="wireframe">
                     <p class="paraTodo">Todo List</p>
                     <img src ="https://user-images.githubusercontent.com/66438028/94867985-40517480-0410-11eb-8f94-4e5b5ac3c727.png"width="400px"height="300px"/>
-                <p>To do lists are always so challenging to be able 
-                    to keep to, so a group of developers and I worked 
-                    to build an application that would help you complete your to do list! 
-                    This was built with ReactJS and Express</p>
+                <p>This is a full stack application that utilizes  Express and React.Js.With this website users can make sure that their tasks are written down all in one place so they don't 
+                    forget anything important. And by prioritizing tasks,they plan in which they'll do them</p>
                  <div class="appicon">
                   <a href="https://glacial-plateau-84495.herokuapp.com/#" class="pic"><i class="fa 	 fa-eye" aria-hidden="true">APP</i></a>
-                
-                   <!-- <a href="https://github.com/tern-app/frontend" class="pic"><i class="fa 	 fa-eye" aria-hidden="true">REPO</i></a> -->
                    <a href="https://github.com/tern-app/frontend" class="pic"><i class="fa fa-code" aria-hidden="true">Code</i></a>
                  </div>
+
                 </div>
 
-                <div class="wireframe">
-                    <p class="paraGrocery">Grocery App</p>
-                    <img src ="https://user-images.githubusercontent.com/66438028/94868096-81e21f80-0410-11eb-9ea4-e437ed3b5dc9.png"
-                    width="400px"height="320px"/>
-                  <p>I built this full-stack App Aiming to use as a Grocery 
-                      shopping cart like Instacart and I used  ReactJS and Django-Rest-framework to build.</p>
-                 <div class="appicon">
-                 <a href="https://secret-brushlands-84620.herokuapp.com/" class="pic"><i class="fa 	 fa-eye" aria-hidden="true">APP</i></a>
-                <a href="https://github.com/mahletbogale/grocery_frontend" class="pic"><i class="fa fa-code"  aria-hidden="true">Code</i></a>
-                
-                 </div>
-               </div>
+               
 
-                <div class="wireframe">
-                    <p class="paraFlashandMenu">Flash Cards</p>          
-                    <img src ="https://user-images.githubusercontent.com/66438028/94871599-5fec9b00-0418-11eb-9501-4bde6bfc4c0b.png"
-                       width="400px" height="300px" />
-                        <p>This App helps to teach our Babies English Alphabets and words , I used  HTML,CSS and Vanilla JavaScript to build.</p>
-                   <div class="appicon">
-                     <a href="https://still-plateau-77694.herokuapp.com/" class="pic"><i class="fa 	 fa-eye" aria-hidden="true">APP</i></a>
-                       <a href="https://github.com/mahletbogale/mahi_project_one" class="pic"><i class="fa fa-code"  aria-hidden="true">Code</i></a>
-                    </div> 
-                </div>
+             
+           
 
-                <div class="wireframe">
-                     <p class="paraFlashandMenu">Menu App</p>
-                    <img src ="https://user-images.githubusercontent.com/66438028/94868043-624af700-0410-11eb-8a86-13971a2bc890.png"width="400px" height="300px"/>
-                  <p>This App has a lot of Fish Recieps with Ingridients and video links
-                       , I used  ReactJS and mealDB API to build.</p>
-                <div class="appicon">
-                    <a href="https://bogaleapp.herokuapp.com/" class="pic"><i class="fa 	 fa-eye" aria-hidden="true">APP</i></a>
-                   <a href="https://github.com/mahletbogale/menu-project" class="pic"><i class="fa fa-code"  aria-hidden="true">Code</i></a>
-                 </div>
-                </div>
-            
+
+
+
+
+
+           
             </div>
-            
-           </p> 
+          
             
 
-      </div>
+        </div>
+
+
+
+        <div class="slides" id="paraP">
+        
+        
+        
+
    
-      <div class="mainwrap">
+           <div class="wifrContainer" id="slider">
+
+
+
+
+        <div class="wireframe" id="wifi2">
+            <p class="paraGrocery">Grocery App</p>
+            <img src ="https://user-images.githubusercontent.com/66438028/94868096-81e21f80-0410-11eb-9ea4-e437ed3b5dc9.png"
+            width="400px"height="320px"/>
+          <p>This is  a full stack application created with React.Js and Django Rest Framework .This App can help you make
+              your Grocery  shopping online and it will save you time and cost.</p>
+         <div class="appicon">
+         <a href="https://secret-brushlands-84620.herokuapp.com/" class="pic"><i class="fa 	 fa-eye" aria-hidden="true">APP</i></a>
+        <a href="https://github.com/mahletbogale/grocery_frontend" class="pic"><i class="fa fa-code"  aria-hidden="true">Code</i></a>
+        
+         </div>
+       </div>
+
+</div>
+        </div>
+
+
+       <div class="slides" id="paraP">
+        
+        
+        
+
+
+       <div class="wifrContainer" id="slider">
+
+        <div class="wireframe" id="wifi3">
+            <p class="paraFlashandMenu">Flash Cards</p>          
+            <img src ="https://user-images.githubusercontent.com/66438028/94871599-5fec9b00-0418-11eb-9501-4bde6bfc4c0b.png"
+               width="400px" height="300px" />
+                <p>This is  a frontend application created with HTML, CSS and Vanilla Js.With
+                     this App users can teach their Babies English Alphabets.</p>
+           <div class="appicon">
+             <a href="https://still-plateau-77694.herokuapp.com/" class="pic"><i class="fa 	 fa-eye" aria-hidden="true">APP</i></a>
+               <a href="https://github.com/mahletbogale/mahi_project_one" class="pic"><i class="fa fa-code"  aria-hidden="true">Code</i></a>
+            </div> 
+        </div>
+</div>
+</div>
+
+
+
+
+
+        <div class="slides" id="paraP">
+        
+        
+           
+
+   
+           <div class="wifrContainer" id="slider">
+
+        <div class="wireframe" id="wifi4">
+             <p class="paraFlashandMenu">Menu App</p>
+            <img src ="https://user-images.githubusercontent.com/66438028/94868043-624af700-0410-11eb-8a86-13971a2bc890.png"width="400px" height="300px"/>
+          <p>This website uses React as a framework and  public sources for  API calls to display data .This App will help you
+               find seafood recipes for your regular meals or for special events.</p>
+        <div class="appicon">
+            <a href="https://bogaleapp.herokuapp.com/" class="pic"><i class="fa 	 fa-eye" aria-hidden="true">APP</i></a>
+           <a href="https://github.com/mahletbogale/menu-project" class="pic"><i class="fa fa-code"  aria-hidden="true">Code</i></a>
+         </div>
+        </div>
+
+
+           </div>
+        </div>
+   
+    
            
             <div class="slides" id="slidesA">
-                    <p class="slide first" id="paraA"><h1>MAHLET <span id="spanH1">BOGALE</span></h1>
-                    <h4>SILVER SPRING · MARYLAND· BOGALE.MAHI@GMAIL.COM </h4>
+                  
+                        
+                        
+                        <h1>MAHLET <span id="spanH1">BOGALE</span></h1>
+                        <br>
+                    <h4> MARYLAND, DC mahlet.luluu@gmail.com </h4>
                     A highly motivated and skilled Software Engineer with excellent 
                     problem solving skills and a strong background in customer service.
                     Always leading with my positive can do attitude, I am empathetic to 
@@ -105,78 +221,84 @@
                     building upon my strengths and contributing to the success of the company.
                     
                     </p>
-                  <li class="icon">  <a href="https://www.linkedin.com/in/mahlet-bogale-be/"><i class="fa fa-linkedin fa-2x" ></i></a> 
+                  <li class="icon">  
+                      <a href="https://www.linkedin.com/in/mahlet-bogale-be/"><i class="fa fa-linkedin fa-2x" ></i></a> 
                     <a href="https://github.com/mahletbogale"><i class="fa fa-github" aria-hidden="true"></i></a>    </li>     
                     
              
            </div>
-           <div class="slides">
-                    <p class="slide" id="paraE"><h2>EXPERIENCE</h2>
-                    <h3>SOFTWARE ENGINEER</h3><span id="spanEx">June 2020 - Present</span>
+
+
+           <div class="slides"  id="paraE">
+                    
+                        <h2>EXPERIENCE</h2>
+                    <h3>Software Engineer Immersive Fellow</h3><span id="spanEx">June 2020 - Sep 2020</span>
                         <h4>GENERAL ASSEMBLY</h4>
-                        Creating powerful website using HTML ,CSS and JavaScript.
-                        I have built flash cards using HTML,CSS and JavaScript, 
-                        built Menu-app using React.js and mealDB API ,built a grocery app using
-                        React.js and Django Rest Frameworks and also built Todo-list using
-                        React.js and our own Node.js Express API with my teams.
-                
+                        <li class="exp">Designing and developing full-stack applications across multiple platforms using modern industry-adopted languages and frameworks. 		</li>
+                        <li class="exp">Developing management layer and services API for the App Volumes product.</li>
+                        <li class="exp">Execute software development for outlined work; support, maintain and document software functionality, design and architecture.
+                        </li>
+                       
                        </br>  </br>
                    
                 
-                        <h3>SHAREPOINT DEVELOPER</h3><span id="spanEx">April 2019 - March 2020</span> 
-                        <h4>BEMANDA TECHNOLOGY</h4>
-                        Creating site collections, Hub site, Modern and 
-                        Classic site, sub sites, content type, site column, pages, 
-                        web parts and other OOB functionalities .
+                        <h3>SharePoint Developer Fellow</h3><span id="spanEx">April 2019 - March 2020</span> 
+                        <h4>Bamenda technology Inc   </h4>
+                       
                     
-                        Developed powerful form using PowerApps and
-                            attached to Flow (Power Automate) workflows 
-                            to automate the business process.
+                        <li class="exp">Creating site collections ,List ,Library , sub sites, content type, site column, pages, web parts and other OOB functionalities.</li>
+                        <li class="exp">Designing powerful custom workflows using  Power Automate(flow) to automate business process.</li>
+                        <li class="exp">Developed a powerful form using PowerApps and attached to Flow (Power Automate) workflows to automate the business process.</li>
                     
                             </br> </br>
                     
                     
-                    <div class="slides">
-                        <h3>FLIGHT ATTENDANT</h3>
+                    
+                        <h3>FLIGHT ATTENDANT</h3><span id="spanEx">Sep 2005 - Jun 2017</span> 
                         <h4>ETHIOPIAN AIRLINES</h4>
-                            Customer Service.
+                            <li class="exp">Leading the whole flight team which would range from 5 - 13 staff.
+                            </li>
+                            <li class="exp">Controlling the cabin safety of the aircraft and ensuring customers felt safe. </li>
+                            <li class="exp">Serving foods and drinks to passengers with a smile, creating an amazing experience.</li>
 
-                </p>
+               
                     
               
            </div>
+
+
+
         </br>  </br>  
         
-           <div class="slides">
-                <p class="slide" id="paraED"><h2>EDUCATION</h2>
-                    <h3>SOFTWARE ENGINEERING</h3>
-                    <h4>GENERAL ASSEMBLY</h4>
+           <div class="slides"  id="paraED">
+              
                     
-                    Successfully Completed General Assembly's Software Engineering Immersive program and getting full stack programming knowledges ,with different tools and methodologies such as HTML, CSS, Javascript, Python, PostgreSQL, MongoDB, Django, NodeJS, ReactJS, Wordpress, Git, and Github.
-                </br></br>
-                    <h3>SHAREPOINT DEVELOPER</h3>
-                    <h4>BEMANDA TECHNOLOGY</h4>
-                    Successfully completed Out of the box features for creating webpages, forms, workflows and more . And I have used and learn SharePoint Designer ,InfoPath ,Visual Studio , PowerShell , PowerApp and flow.
-                </br></br>
                     
-                    <h3>UNITY UNIVERSITY</h3>
-                    <h4>BACHELOR OF SCIENCE</h4>
-                    Management Information System
+                    <h2>EDUCATION</h2>
+                   
+                    <h4>GENERAL ASSEMBLY ,<span class="edspan"> Software Engineering Immersive Certification.</span></h4>
+                    
+                    
                 
-                    </p>
-
-                
+                  
+                    <h4>BEMANDA TECHNOLOGY  ,<span span class="edspan"> SharePoint,Ms Power App, Flow .</span></h4>
                     
-
-
-                </br>  </br>
+     
+                    
+                   
+                    <h4> UNITY UNIVERSITY ,<span span class="edspan"> Bachelor’s degree in Management Information Systems.</span></h4>
+                   
               
             
            </div>
-           
-           <div class="slides">
 
-                    <p class="slide" id="paraS"><h2>SKILLS</h2>
+
+
+           
+           <div class="slides"  id="paraS">
+
+                   
+                        <h2>SKILLS</h2>
                         <h4>PROGRAMMING LANGUAGES & TOOLS</h4>
                         <p class="iconSkill">HTML, CSS, Javascript, Python, PostgreSQL, MongoDB, Django, NodeJS, ReactJS,
                             Wordpress, Git, Github and SharePoint.
@@ -189,12 +311,12 @@
                             Agile Development & Scrum   </p>       
                     
                     
-                    </p>
+                    
            </div>
         
 </div>   
     </div> 
-</div>
+
 
            
 <script src="./blog.js"> </script>
