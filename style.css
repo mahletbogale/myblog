@@ -332,6 +332,19 @@ h4 {
 
   transform-origin: center center;
 } */
+.resume{
+  list-style: none;
+  font-size: 10px;
+  cursor: pointer;
+}
+.resume a{
+  color: #005fb2;
+}
+
+.resume a:hover {
+  cursor: pointer;
+  color: black;
+}
 
 .wifrContainer img {
   width: 188px;
