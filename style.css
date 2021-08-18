@@ -27,8 +27,8 @@ body {
   height: 90vh;
 
   margin-left: 300px;
-  margin-top: 10px;
-  padding: 20px;
+  /* margin-top: 10px;
+  padding: 20px; */
   overflow: hidden;
   position: absolute;
 
@@ -62,19 +62,36 @@ p {
 }
 
 .slides {
-  padding-top: 40px;
-  padding-left: 50px;
+  padding: 40px;
+  margin: 0 auto;
   align-items: center;
+  /* padding-top: 40px; */
+  /* padding-left: 50px; */
+  /* align-items: center; */
   width: 100vw;
   height: 100vh;
-  justify-content: center;
+
 }
+
+.slides, .wifrContainer{
+ 
+  width: 100vw;
+  height: 100vh;
+  
+ }
+ .wifrContainer{
+height: 100vh;
+  margin-top: 30px;
+  margin-left: 130px;
+ }
+
+
 #slidesA {
-  width: 55vw;
+  width: 65vw;
   line-height: 2;
   justify-content: center;
   align-items: center;
-  margin-left: 70px;
+  /* margin-left: 40px; */
 }
 
 .edspan {
@@ -297,14 +314,15 @@ h4 {
   float: right;
 }
 
-#paraP {
+
+/* #paraP {
  margin-left: 40px;
   margin-top: 20px;
   align-items: center;
 }
 #paraE{
   width: 70%;
-}
+} */
 
 /* .wifrContainer {
   display: grid;
@@ -363,13 +381,16 @@ h4 {
   border: 1px solid #005fb2;
   background-color: white;
 
-  align-items: center;
 
-  margin-left: 160px;
+  /* align-items: center; */
+
+  /* margin-left: 160px; */
 }
 .wifrContainer{
-  margin-top: 20px;
-  padding-top: 50px;
+  
+  /* margin-top: 20px;*/
+  padding: 50px; 
+  /* margin: 0 auto; */
 }
 
 .next {
